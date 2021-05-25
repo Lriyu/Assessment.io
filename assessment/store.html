@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Store</title>
+    <link href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="store.css">
+    <a href="index.html"><i class="bx bx-arrow-back"></i></a>
+   
+</head>
+<body>
+<script src="store.js"></script>
+    <div class="icons d-flex">
+   <div>
+    <h2><i class="bx bx-cart"></i></h2>
+    <section>
+<nav class="nav container">
+    <section class="product-center container">
+      <div class="product">
+        <div class="img-cover">
+          <img src="images/product1.png" width="150px">
+        </div>
+        <p>iphone 11 64gb Purple</p>
+       <h4>₱1</h4>
+       <span></span>
+        <button class="btn btn-primary" type="button">ADD TO CART</button>
+      </div>
+
+      <div class="product">
+        <div class="img-cover">
+            <img src="images/product2.png" width="150px">
+        </div>
+        <p>iphone 12 128gb White</p>
+        <h4>₱1</h4>
+        <span></span>
+        <button class="btn btn-primary" type="button">ADD TO CART</button>
+      </div>
+
+      <div class="product">
+        <div class="img-cover">
+            <img src="images/product3.png" width="150px">
+        </div>
+        <p>iphone 12 128gb Red</p>
+        <h4>₱1</h4>
+        <span></span>
+        <button class="btn btn-primary" type="button">ADD TO CART</button>
+      </div>
+      <div class="product">
+        <div class="img-cover">
+            <img src="images/product4.png" width="150px">
+        </div>
+        <p>iphone 12 128gb Blue</p>
+        <h4>₱1</h4>
+        <span></span>
+        <button class="btn btn-primary" type="button">ADD TO CART</button>
+      </div>
+      <div class="product">
+        <div class="img-cover">
+            <img src="images/product5.png" width="150px">
+        </div>
+        <p>iphone12 Pro max 5</p>
+        <h4>₱1</h4>
+        <span></span>
+        <button class="btn btn-primary" type="button">ADD TO CART</button>
+      </div>
+      <div class="product">
+        <div class="img-cover">
+            <img src="images/product6.png" width="150px">
+        </div>
+        <p>iphone12 Pro max Gold</p>
+        <h4>₱1</h4>
+        <span></span>
+        <button class="btn btn-primary" type="button">ADD TO CART</button>
+      </div>
+      <div class="product">
+        <div class="img-cover">
+            <img src="images/product7.png" width="150px">
+        </div>
+        <p>iphone12 128gb BLue</p>
+        <h4>₱1</h4>
+        <span></span>
+        <button class="btn btn-primary" type="button">ADD TO CART</button>
+      </div>
+        <div class="product">
+            <div class="img-cover">
+                <img src="images/product6.png" width="150px">
+            </div>
+            <p>iphone12 Pro max</p>
+            <h4>₱1</h4>
+            <span></span>
+            <button class="btn btn-primary" type="button">ADD TO CART</button>
+            </div>
+    </section>
+<div class="select">
+<script src="store.js"></script>
+
+
+</body>
+</div>
+</html>
+
+<script type="text/javascript">
+var noti = document.querySelector('h2');
+var select = document.querySelector('.select');
+var button = document.getElementsByTagName('button');
+for(but of button)
+{
+but.addEventListener('click', (e)=> {
+    var add =Number(noti.getAttribute('data-count')|| 0);
+    noti.setAttribute('data-count', add + 1);
+    noti.classList.add('zero');
+
+    var parent = e.target.parentNode;
+    var clone = parent.cloneNode(true);
+    select.appendChild(clone);
+    clone.lastElementChild.innerText = "Buy-now";
+
+    if (clone) {
+        noti.onclick =() => {
+            select.classlist.toggle('display');
+        }
+      }
+})
+}
+
+</script>
