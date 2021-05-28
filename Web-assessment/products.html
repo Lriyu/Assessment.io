@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  
+  <link href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="design/styles.css">
+</head>
+<body>
+    <header>
+        <title>Cart</title>
+      </head>
+     <body>
+    <div class="overlay"></div>
+    <nav> 
+                    <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="">About</a></li>
+                    <li class="cart" href="cart.html">
+                   <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal"><i class='bx bxs-cart bx-tada bx-rotate-90'></i><span>0</span></button>
+                   
+                </ul>
+                </nav>
+            </header>
+                    <!-- Modal -->
+                    <div class="modal fade" id="myModal" role="dialog">
+                      <div class="modal-dialog">
+                    
+                        <!-- Modal content-->
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                            <h4 class="modal-title">Your Cart</h4>
+                          </div>
+                          
+                             <div class="product-header">
+                      <h5 class="product-title">PRODUCT</h5>
+                      <h5 class="price">PRICE</h5>
+                      <h5 class="quantity">QTY</h5>
+                      <h5 class="total">TOTAL</h5>
+                    </div> 
+                          <div class="modal-body">
+                           <div class="products-container">
+
+                        </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>              
+                    </div>
+            </div>
+        </div>
+        </div> 
+    </div>
+    
+    <div class="container">
+      <div class="image">
+        <img src="images/iphone11purple.png" width="250px" alt="Iphone 11 purple">
+        <h3>iphone 11 purple</h3>
+        <h3>₱1</h3>
+        <a class = "add-cart cart1" href="#">Add to cart</a>
+        
+      </div>
+
+      <div class="image">
+        <img src="images/iphone11white.png" width="250px" alt="Iphone">
+        <h3>iphone 11 white</h3>
+        <h3>₱2</h3>
+        <a class = "add-cart cart2" href="#">Add to cart</a>
+       
+      </div>
+
+      <div class="image">
+        <img src="images/iphone12red.png" width="250px" alt="Iphone">
+        <h3>iphone 12 red</h3>
+        <h3>₱3</h3>
+        <a class = "add-cart cart3" href="#">Add to cart</a>
+        
+      </div>
+
+      <div class="image">
+        <img src="images/iphone12blue.png" width="250px" alt="Iphone">
+        <h3>iphone 12 blue</h3>
+        <h3>₱4</h3>
+        <a class = "add-cart cart4" href="#">Add to cart</a>
+        
+      </div>
+
+      <div class="image">
+        <img src="images/iphone11black.png" width="250px" alt="Iphone">
+        <h3>iphone 11 black</h3>
+        <h3>₱5</h3>
+        <a class = "add-cart cart5" href="#">Add to cart</a>
+      
+      </div>
+
+      <div class="image">
+        <img src="images/iphone11gold.png" width="250px" alt="Iphone">
+        <h3>iphone 12 gold</h3>
+        <h3>₱6</h3>
+        <a class = "add-cart cart6" href="#">Add to cart</a>
+        
+      </div>
+
+      <div class="image">
+        <img src="images/iphone12darkblue.png" width="250px" alt="Iphone">
+        <h3>iphone 12 darkblue</h3>
+        <h3>₱7</h3>
+        <a class = "add-cart cart7" href="#">Add to cart</a>
+  
+      </div>
+
+      <div class="image">
+        <img src="images/iphone12oceanblue.png" width="250px" alt="Iphone">
+        <h3>iphone 12 ocean blue</h3>
+        <h3>₱8s</h3>
+        <a class = "add-cart cart8" href="#">Add to cart</a>
+    
+      </div>
+    </div>
+
+    <script src="js/cart.js"></script>
+ 
+</body>
+</html>
